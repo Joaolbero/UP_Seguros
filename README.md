@@ -1,92 +1,86 @@
-# UP_Seguros
-> **PT-BR:** Aplicação desktop em **Java (Swing)** para simulação/cotação de seguros com múltiplas telas e classes de domínio (ex.: Carro, Moto, Eletrodomésticos, Celulares).  
-> **EN:** **Java (Swing)** desktop application for insurance simulation/quotations with multiple forms and domain classes (e.g., Car, Motorcycle, Home Appliances, Cell Phones).
+<p align="center">
+  <img src="./icon/icon.png" alt="Project Icon" width="200" height="200">
+</p>
+
+# 🛡️ UP Seguros — Java Swing Insurance Simulator
+
+<p align="center">
+  <img src="https://img.shields.io/badge/STATUS-active-brightgreen?style=for-the-badge">
+  <img src="https://img.shields.io/badge/PROJECT_TYPE-desktop_app-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/TECH_STACK-Java_8+_/_Swing-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/DEPENDENCIES-none-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/FEATURES-GUI,_domain_classes,_multi_screens-lightgrey?style=for-the-badge">
+  <img src="https://img.shields.io/badge/LICENSE-MIT-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/VERSION-1.0.0-red?style=for-the-badge">
+  <a href="https://github.com/Joaolbero">
+    <img src="https://img.shields.io/badge/AUTHOR-João_Albero-black?style=for-the-badge">
+  </a>
+  <img src="https://img.shields.io/github/last-commit/Joaolbero/UP_Seguros?style=for-the-badge">
+</p>
 
 ---
 
-## 📌 Descrição | Description
+## 📄 Descrição / Description
 
-**PT-BR**  
-Projeto acadêmico GUI feito em **Java Swing**. A navegação é composta por várias telas (`Tela1`…`Tela7`) e classes de domínio (ex.: `Carro`, `Moto`, `Caminhao`, `Eletrodomesticos`, `Notebooks`, categorias A/B). O código foi originalmente estruturado com **NetBeans** (arquivos `.form` presentes) e inclui `.class` gerados.
-
-**EN**  
-Academic GUI project built with **Java Swing**. Navigation spans several forms (`Tela1`…`Tela7`) and domain classes (e.g., `Carro`, `Moto`, `Caminhao`, `Eletrodomesticos`, `Notebooks`, categories A/B). Project was originally structured with **NetBeans** (`.form` files included) and contains compiled `.class` files.
+| 🇧🇷 **PT-BR** | 🇺🇸 **EN** |
+| --- | --- |
+| Aplicação desktop desenvolvida em **Java Swing**, composta por múltiplas telas e classes de domínio para simulação de seguros (Carro, Moto, Caminhão, Eletrodomésticos, Notebooks e mais). O projeto foi originalmente estruturado no **NetBeans**, contendo arquivos `.form` e classes compiladas `.class`. | Desktop application developed using **Java Swing**, featuring multiple forms and domain classes for insurance simulation (Car, Motorcycle, Truck, Home Appliances, Notebooks, etc.). The project was originally structured in **NetBeans**, including `.form` files and compiled `.class` artifacts. |
 
 ---
 
-## ▶️ Como executar | How to run
+## ✨ Funcionalidades / Features
 
-> **Observação/Note:** Não há Maven/Gradle. É um projeto Java “puro” com **package `projeto`**. Você pode compilar via terminal ou abrir no **NetBeans** (recomendado para editar as telas `.form`).
+| 🇧🇷 **Recursos (PT-BR)** | 🇺🇸 **Features (EN)** |
+| --- | --- |
+| • GUI em Java Swing<br>• Múltiplas telas (Tela1…Tela7)<br>• Classes de domínio com regras básicas<br>• Estrutura de projeto legada do NetBeans<br>• Código 100% Java “puro” | • Java Swing GUI<br>• Multiple screens (Tela1…Tela7)<br>• Domain classes with basic rules<br>• Legacy NetBeans structure<br>• 100% pure Java code |
 
-### Opção A — Terminal (JDK instalado)
+---
 
-**PT-BR**  
+## ▶️ Como executar / How to Run
 
-1. Abra o terminal na pasta onde ficam os fontes (`UP_Seguros-main/UP_Seguros-main/`).
+| 🇧🇷 **PT-BR** | 🇺🇸 **EN** |
+| --- | --- |
+| Projeto Java puro sem Maven/Gradle. Pode ser executado via terminal ou NetBeans. | Pure Java project without Maven/Gradle. Can be executed via terminal or NetBeans. |
 
-2. Compile para uma pasta `out/`:
-   ```bash
-   mkdir -p out
-   javac -d out projeto/*.java
+---
 
-3. Execute alguma tela com main (exemplo Tela1):
+### 🔧 Opção A — Terminal (JDK instalado)
 
-java -cp out projeto.Tela1
+**Compilar:**
 
-**EN**
+    mkdir -p out
+    javac -d out projeto/*.java
 
-1. Open a terminal at the sources folder (`UP_Seguros-main/UP_Seguros-main/`).
+**Executar (exemplo Tela1):**
 
-2. Compile to `out/`:
-```bash
-mkdir -p out
-javac -d out projeto/*.java
+    java -cp out projeto.Tela1
 
-3. Run any form with main (example Tela1):
+---
 
-java -cp out projeto.Tela1
+### 🖥️ Opção B — NetBeans (GUI Builder)
 
-Opção B — NetBeans (GUI Builder)
+| 🇧🇷 **PT-BR** | 🇺🇸 **EN** |
+| --- | --- |
+| File → Open Project…<br>Edite telas `.form` pelo GUI Builder<br>Defina a classe principal (ex.: `projeto.Tela1`) e clique em Run | File → Open Project…<br>Edit `.form` screens via GUI Builder<br>Set main class (e.g., `projeto.Tela1`) and run |
 
-PT-BR
+---
 
-File → Open Project… e aponte para a pasta do projeto.
+## 🗂️ Estrutura / Structure
 
-Use o GUI Builder para editar os .form.
+| 🇧🇷 **Estrutura (PT-BR)** | 🇺🇸 **Structure (EN)** |
+| --- | --- |
+| projeto/*.java<br>projeto/*.form<br>*.class (build legado)<br>manifest.mf<br>icon/icon.png (ícone README) | projeto/*.java<br>projeto/*.form<br>*.class (legacy build)<br>manifest.mf<br>icon/icon.png (README icon) |
 
-Defina a classe principal (ex.: projeto.Tela1) e Run.
+---
 
-EN
+## 📄 Licença / License
 
-File → Open Project… and select the project folder.
+Projeto licenciado sob MIT License.  
+Project licensed under the MIT License.
 
-Use GUI Builder to edit .form files.
+---
 
-Set main class (e.g., projeto.Tela1) and Run.
+## 👤 Autor | Author
 
-🗂️ Estrutura | Structure
-
-UP_Seguros/
-
-├─ projeto/
-
-│  ├─ *.java          # domain + GUI (package projeto)
-
-│  └─ *.form          # NetBeans GUI builder files
-
-├─ *.class            # compiled classes (legacy build artifacts)
-
-└─ manifest.mf        # legacy manifest (optional)
-
-🧪 Qualidade / CI (opcional)
-
-PT-BR: Por ser Java “puro”, não há necessidade de CI. Podemos adicionar uma Action simples só para compilar com javac na main e garantir que o build não quebre.
-EN: Since it’s plain Java, CI isn’t required. We can add a minimal compile check Action with javac on main.
-
-📄 Licença | License
-
-MIT — veja LICENSE.
-
-👤 Autor | Author
-
-João Vitor Albero — GitHub · LinkedIn
+Criado por João Albero · 2025  
+Created by João Albero · 2025
